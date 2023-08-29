@@ -1,0 +1,1805 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*--font--*/
+@font-face {
+    font-family: IRANSans;
+    src: url("../font/WebFonts/fonts/eot/IRANSansWeb.eot");
+    src: url("../font/WebFonts/fonts/ttf/IRANSansWeb.ttf");
+    src: url("../font/WebFonts/fonts/woff/IRANSansWeb.woff");
+    src: url("../font/WebFonts/fonts/woff2/IRANSansWeb.woff2");
+}
+
+@font-face {
+    font-family: bnazanb;
+    src: url("../font/bnazanin/bnazanb.eot");
+    src: url("../font/bnazanin/bnazanb.ttf");
+    src: url("../font/bnazanin/bnazanb.woff");
+}
+
+/*--end font--*/
+/*--body--*/
+body {
+    font-family: IRANSans;
+}
+
+/*--end body--*/
+
+/*--end body--*/
+.head {
+    background: url("../pic/Halftone%20circle%20background%20vector.jpg") top center no-repeat;
+    background-size: cover;
+}
+
+.head img {
+    margin: 0 auto;
+    width: 18em;
+    height: 100px;
+}
+
+.head h4 {
+    font-family: IRANSans;
+    font-weight: bolder;
+    background: #0237db;
+    background: linear-gradient(to right, #0237db 0%, #33c4f1 25%, #0237db 50%, #33c4f1 75%, #0237db 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3em;
+
+
+}
+
+/*--end body--*/
+
+/*--nav--*/
+.bg-green {
+    background: linear-gradient(to right, rgba(51, 196, 241, 0.71), rgba(51, 143, 241, 0.84), black)
+}
+
+.navbar .navbar-brand img {
+    width: 55px;
+    height: 50px;
+    margin-left: 10px;
+}
+
+.navbar .navbar-brand {
+    font-size: 14px;
+}
+
+.navbar {
+    direction: rtl;
+    text-align: right;
+    font-family: IRANSans;
+    font-size: 15px;
+    box-shadow: 2px 2px 5px black;
+
+}
+
+.nav-item {
+    padding-right: 30px;
+}
+
+.navbar-toggler img {
+    width: 25px;
+    height: 25px;
+}
+
+.navbar .collapse .navbar-nav .nav-item .nav-link {
+    direction: rtl;
+    color: white;
+}
+
+.navbar .collapse .navbar-nav .nav-item .nav-link:hover {
+    color: #0237db;
+    transition: all 0.5s linear;
+}
+
+
+.navbar .dropdown-menu {
+    background-color: whitesmoke;
+    text-align: right !important;
+}
+
+.navbar-nav li:hover > ul.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu {
+    position: relative;
+    text-align: right !important;
+}
+
+.dropdown-submenu > .dropdown-menu {
+    top: 0;
+    /*left:-100%;*/
+    left: -9.8rem; /* 10rem is the min-width of dropdown-menu */
+    margin-top: -6px;
+    font-size: 13px;
+}
+
+.dropdown-submenu > .dropdown1 {
+    top: 0;
+    /*left:-100%;*/
+    left: -12.5rem; /* 10rem is the min-width of dropdown-menu */
+    margin-top: -6px;
+    font-size: 13px;
+}
+
+
+/* rotate caret on hover */
+.dropdown-menu > li > a:hover:after {
+    text-decoration: underline;
+    transform: rotate(-90deg);
+}
+
+/*--/nav--*/
+
+
+
+/*--hr--*/
+hr {
+    border: 0;
+    margin: 1.35em auto;
+    max-width: 100%;
+    background-position: 50%;
+    box-sizing: border-box;
+}
+
+.shine {
+    height: 20px;
+    width: 60%;
+    background-image: radial-gradient(
+            farthest-side at 50% -50%,
+            hsla(0, 0%, 0%, 0.5),
+            hsla(0, 0%, 0%, 0));
+    position: relative;
+}
+
+.shine::before {
+    height: 1px;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(
+            90deg,
+            hsla(0, 0%, 0%, 0),
+            hsla(0, 0%, 0%, 0.75) 50%,
+            hsla(0, 0%, 0%, 0));
+}
+
+/*--/hr--*/
+
+/*--about--*/
+
+.aboutme h2 {
+    color: #23272b;
+    font-family: IRANSans;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.52);
+    margin-top: 20px;
+}
+
+
+.aboutme p {
+    font-family: IRANSans;
+    text-align: justify;
+    direction: rtl;
+}
+
+.aboutme ul li {
+    font-family: IRANSans;
+    text-align: justify;
+    direction: rtl;
+    list-style: none;
+}
+
+.aboutme a {
+    font-family: IRANSans;
+    text-align: center;
+    width: 10%;
+}
+
+.project {
+    font-family: IRANSans;
+}
+
+.project .project-1 {
+    direction: rtl;
+}
+
+.project .project-2 img {
+    width: 100%;
+    box-shadow: -5px -5px 30px 5px #0237db, 5px 5px 30px 5px #33c4f1;
+}
+
+.aboutme img {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    box-shadow: -5px -5px 30px 5px #0237db, 5px 5px 30px 5px #33c4f1;
+}
+
+/*--/about--*/
+
+/*--parallax1--*/
+.parallax1 {
+    background: url("../pic/slide/1%20(2.html) - Copy.jpg") top center no-repeat fixed;
+    background-size: cover;
+    width: 100%;
+    height: 40vh;
+}
+
+@media (min-width: 560px) and (max-width: 768px) {
+    .parallax1 {
+        width: 100%;
+        height: 30vh;
+    }
+}
+
+@media (max-width: 560px) {
+    .parallax1 {
+        width: 100%;
+        height: 30vh;
+    }
+}
+
+.parallax1 h1 {
+    color: white;
+    font-family: IRANSans;
+    text-shadow: 2px 2px 10px black;
+    text-align: center;
+}
+
+@media (min-width: 560px) and (max-width: 768px) {
+    .parallax1 h1 {
+        font-size: 30px;
+
+    }
+}
+
+@media (max-width: 560px) {
+    .parallax1 h1 {
+        font-size: 30px;
+    }
+}
+
+/*--/parallax1--*/
+
+/*--bg--*/
+.bg {
+    background: url("../pic/Halftone%20circle%20background%20vector.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+/*--/bg--*/
+
+/*--section2-product--*/
+.sep2-pro {
+    direction: rtl;
+    font-family: IRANSans;
+}
+
+.sep2-pro h2 {
+    color: #23272b;
+    font-family: IRANSans;
+    font-size: 22px;
+    font-weight: bold;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.52);
+    margin-top: 20px;
+}
+
+.card:hover {
+    transition: all 0.5s ease;
+    box-shadow: 1px 1px #33c4f1,
+    2px 2px #0237db,
+    3px 3px #0237db;
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+}
+
+.card-img-top {
+    height: 180px;
+}
+
+.card-img-top1 {
+    width: 70%;
+    height: 180px;
+    margin: 0 auto;
+}
+
+.card-img-top2 {
+    width: 50%;
+    height: 180px;
+    margin: 0 auto;
+}
+
+.card-1 {
+    font-size: 15px;
+}
+
+.card-text a {
+    color: #0237db;
+}
+
+.card-text a:hover {
+    color: #0237db;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.card-body {
+    background: linear-gradient(to left, rgba(68, 105, 53, 0.59), rgba(125, 186, 69, 0.56), rgba(51, 196, 241, 0.56), rgba(51, 146, 271, 0.59));
+}
+
+/*--/section2-product--*/
+
+/*--sec1-art--*/
+
+.art-1 h2 {
+    color: #0237db;
+    font-family: IRANSans;
+    font-size: 22px;
+    font-weight: bold;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.52);
+}
+
+.sec1-art {
+    direction: rtl;
+    font-family: IRANSans;
+    background: url("../img/photo-15.png") center center no-repeat fixed;
+    background-size: cover;
+}
+
+.sec1-art img {
+    width: 180px;
+    height: 100px;
+    margin-bottom: 50px;
+}
+
+.sec1-art img:hover {
+    transition: all 0.8s linear;
+    transform: rotate(360deg);
+}
+
+.sec1-art p a {
+    width: 180px;
+}
+
+.sec1-art p a:hover {
+    transition: all 0.8s linear;
+    transform: scale(1.2, 1.2);
+}
+
+.btn-success-new {
+    background: linear-gradient(to left, #33c4f1, #0237db, #33c4f1, #0237db);
+}
+
+/*--/sec1-art--*/
+
+/*--news--*/
+.news {
+    font-family: IRANSans;
+}
+
+.news h2 {
+    color: #23272b;
+    font-family: IRANSans;
+    font-size: 22px;
+    font-weight: bold;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.52);
+    margin-top: 20px;
+}
+.c{
+
+}
+.news-one {
+    direction: rtl;
+    font-family: IRANSans;
+}
+
+.ourTeam h2 {
+    color: #fff;
+    margin: 0 0 30px 0
+}
+
+.ourTeam .i {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.ourTeam .i .c {
+    background: linear-gradient(to left, rgba(51, 196, 271, 0.59), rgba(51, 146, 271, 0.56), rgba(51, 196, 271, 0.56), rgba(51, 146, 271, 0.59));
+    -webkit-box-shadow: 0 4px 0 blue;
+    -moz-box-shadow: 0 4px 0 blueviolet;
+    box-shadow: 0 4px 0 blueviolet;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 110px
+}
+
+.ourTeam .i .c .wrap {
+    position: relative
+}
+
+.ourTeam .i .c .wrap img {
+    width: 100%;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease
+}
+
+.ourTeam .i .c .wrap .info {
+    padding: 30px 0;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease
+}
+
+.ourTeam .i .c .wrap .info .name {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.ourTeam .i .c .more {
+    position: absolute;
+    bottom: -100%;
+    width: 100%;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+.ourTeam .i .c .more h5 {
+    font-size: 17px;
+    font-weight: bold;
+}
+.ourTeam .i .c .more p {
+    margin: 0 18px 30px 18px;
+    line-height: 22px;
+    text-align: justify!important;
+}
+.ourTeam .i .c .more a {
+    color: #446935;
+    padding-bottom: 10px;
+}
+.ourTeam .i .c .more a:hover {
+    color: #7dba45;
+    text-decoration: none;
+    transition: all 0.5s ease;}
+
+.ourTeam .i .c:hover img {
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    -webkit-opacity: 0;
+    opacity: 0
+}
+
+.ourTeam .i .c:hover .info {
+    top: 0
+}
+
+.ourTeam .i .c:hover .more {
+    bottom: 0
+}
+
+/*--/news--*/
+
+/*--data-b--*/
+
+.article {
+    height: auto;
+}
+
+.article-header .image {
+    background-image: url('../pic/Halftone%20circle%20background%20vector.jpg');
+    background-size: cover;
+}
+
+.headline {
+    background-color: #0237db;
+    color: #138496;
+    padding: 0.75rem;
+    text-align: center;
+    box-shadow: 0 1.2em 0 0.75em;
+}
+
+.headline p {
+    font-size: 1.25em;
+    margin-bottom: 20px;
+}
+
+.headline a {
+    font-size: 1.25em;
+    margin-bottom: 20px;
+    display: block;
+    color: white;
+}
+
+.headline h1 {
+    font-family: IRANSans;
+    margin-top: 20px;
+    margin-bottom: 0.5em;
+    font-size: 35px;
+    line-height: 1;
+    text-shadow: 3px 3px 0px #3e2723;
+        color: white;
+
+}
+
+.byline {
+    margin: 0 1rem 1rem 1rem;
+    font-family: IRANSans;
+    letter-spacing: -0.2px;
+        color: white;
+
+}
+
+.article-text >p {
+    font-family: IRANSans;
+    direction: rtl;
+    font-weight: bold;
+    text-align: justify;
+    margin: -1em auto;
+    padding: 0.5em 1em;
+    max-width: 620px;
+    font-size: 22px;
+    line-height: 2;
+    color: #3e2723;
+}
+
+.first::first-letter {
+    float: left;
+    margin: 0 0.2em 0 0;
+    color: saddlebrown;
+    font-size: 4em;
+    font-weight: 600;
+    text-shadow: 2px 2px 0px #3e2723;
+}
+.article-text >blockquote{
+      font-family: IRANSans;
+    direction: rtl;
+    text-align: justify;
+    margin: -1em auto;
+    padding: 0.5em 1em;
+    max-width: 620px;
+    font-size: 1em;
+    line-height: 1.25;
+    color: #3e2723;
+}
+
+.article-header {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr;
+}
+
+.article-header .image {
+    grid-column: 1 / -1;
+    grid-row: 1 / 3;
+}
+
+.headline {
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+    z-index: 100;
+}
+
+/*--/data-b--*/
+
+/*--counter--*/
+.count {
+    display: none;
+    background-color: rgba(125, 186, 69, 0.29);
+}
+
+.counter {
+    color: #446935;
+    font-family: 'Muli', sans-serif;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    border-radius: 100%;
+    padding: 77px 32px 40px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.counter:before,
+.counter:after {
+    content: "";
+    background: #fff;
+    width: 80%;
+    height: 80%;
+    border-radius: 100%;
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+}
+
+.counter:after {
+    background: linear-gradient(45deg, #446935 49%, #7dba45 50%);
+    width: 100%;
+    height: 100%;
+    box-shadow: none;
+    transform: translate(0);
+    top: 0;
+    left: 0;
+    z-index: -2;
+    clip-path: polygon(50% 50%, 50% 0, 100% 0, 100% 100%, 0 100%, 0 50%);
+}
+
+.counter .counter-icon {
+    color: #446935;
+    background: linear-gradient(45deg, rgba(68, 105, 53, 0.64) 49%, #7dba45 50%);
+    font-size: 33px;
+    line-height: 70px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: all 0.3s;
+}
+
+.counter .counter-icon i.fa {
+    transform: rotate(0deg);
+    transition: all 0.3s ease 0s;
+}
+
+.counter:hover .counter-icon i.fa {
+    transform: rotate(360deg);
+}
+
+.counter h3 {
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 3px;
+}
+
+.counter .counter-value {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.counter.green {
+    color: #88BA1B;
+}
+
+.counter.orange:after,
+.counter.orange .counter-icon {
+    background: linear-gradient(45deg, #88BA1B 49%, #ACD352 50%);
+}
+
+@media screen and (max-width: 990px) {
+    .counter {
+        margin-bottom: 40px;
+    }
+}
+
+/*--/counter--*/
+
+
+/*--team--*/
+.team {
+    direction: rtl;
+    background: url("../pic/Halftone%20circle%20background%20vector.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.team h2 {
+    color: #446935;
+    font-family: IRANSans;
+    font-size: 22px;
+    font-weight: bold;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.52);
+    padding-top: 20px;
+}
+
+.team .photo1 {
+    background: url("../pic/team/yazdanpanah.png");
+    background-size: cover;
+}
+
+.team .photo2 {
+    background: url("../pic/team/drparstar.png") top center;
+    background-size: cover;
+}
+
+.team .description {
+}
+
+.blog-card {
+    width: 80%;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+    margin-bottom: 1.6%;
+    background: #fff;
+    line-height: 1.4;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 0;
+    box-shadow: -5px -5px 30px 5px rgba(68, 105, 53, 0.55), 5px 5px 30px 5px rgba(125, 186, 69, 0.53);
+
+}
+
+.blog-card:hover .photo {
+    transform: scale(1.3) rotate(3deg);
+}
+
+.blog-card .meta {
+    position: relative;
+    z-index: 0;
+    height: 200px;
+}
+
+.blog-card .photo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.2s;
+}
+
+.blog-card .details, .blog-card .details ul {
+    margin: auto;
+    padding: 0;
+    list-style: none;
+}
+
+.blog-card .details {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    margin: auto;
+    transition: left 0.2s;
+    background: rgba(0, 0, 0, .6);
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+.blog-card .description {
+    padding: 1rem;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.blog-card .description h1 {
+    line-height: 1;
+    margin: 0;
+    font-size: 1.7rem;
+    font-family: IRANSans;
+    padding-top: 45px;
+}
+
+.blog-card .description h2 {
+    font-family: IRANSans;
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #a2a2a2;
+    margin-top: 5px;
+    padding-top: 10px;
+
+}
+
+.blog-card:hover .details {
+    left: 0%;
+}
+
+@media (min-width: 640px) {
+    .blog-card {
+        flex-direction: row;
+        max-width: 700px;
+    }
+
+    .blog-card .meta {
+        flex-basis: 40%;
+        height: auto;
+    }
+
+    .blog-card .description {
+        flex-basis: 60%;
+    }
+
+    .blog-card .description:before {
+        transform: skewX(-3deg);
+        background: #fff;
+        width: 30px;
+        position: absolute;
+        left: -10px;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    .blog-card.alt {
+        flex-direction: row-reverse;
+    }
+
+    .blog-card.alt .description:before {
+        left: inherit;
+        right: -10px;
+        transform: skew(3deg);
+    }
+
+    .blog-card.alt .details {
+        padding-left: 25px;
+    }
+}
+
+.team h1 {
+    position: relative;
+    text-align: center;
+    color: #353535;
+    font-size: 50px;
+    font-family: "Cormorant Garamond", serif;
+}
+
+.team p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    font-size: 18px;
+    color: #676767;
+}
+
+.frame {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+button {
+    margin: 20px;
+}
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+    7px 7px 20px 0px rgba(0, 0, 0, .1),
+    4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+.btn-5 {
+    font-family: IRANSans;
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    background: darkgrey;
+    background: linear-gradient(0deg, darkgrey 0%, darkgreen 100%);
+}
+
+.btn-5:hover {
+    color: black;
+    background: transparent;
+    box-shadow: none;
+}
+
+.btn-5:before,
+.btn-5:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: #446935;
+    box-shadow: -1px -1px 5px 0px #fff,
+    7px 7px 20px 0px #0003,
+    4px 4px 5px 0px #0002;
+    transition: 400ms ease all;
+}
+
+.btn-5:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+.btn-5:hover:before,
+.btn-5:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+}
+
+
+/*--/team--*/
+
+/*--target--*/
+.target {
+    background: url("../pic/Halftone%20circle%20background%20vector.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.target h2 {
+    color: #446935;
+    font-family: IRANSans;
+    font-size: 22px;
+    font-weight: bold;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.52);
+    padding-top: 20px;
+}
+
+.target img {
+    width: 100%;
+    height: 40vh;
+    box-shadow: -5px -5px 30px 5px #446935, 5px 5px 30px 5px #7dba45;
+}
+
+@media (min-width: 560px) and (max-width: 768px) {
+    .target img {
+        width: 70%;
+        height: 50vh;
+    }
+}
+
+.target ul li {
+    font-family: IRANSans;
+    direction: rtl;
+    list-style: none;
+}
+
+.target .tr {
+    font-family: IRANSans;
+    text-align: justify;
+    direction: rtl;
+    padding: 20px;
+}
+
+/*--/target--*/
+
+/*--map-active--*/
+.map-active {
+    font-family: IRANSans;
+    background: url("../pic/Halftone%20circle%20background%20vector.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.map-active .ma-1 {
+    direction: rtl;
+}
+
+.map-active img {
+    width: 100%;
+    height: 50vh;
+    box-shadow: -5px -5px 30px 5px #446935, 5px 5px 30px 5px #7dba45;
+}
+
+@media (min-width: 560px) and (max-width: 768px) {
+    .map-active img {
+        width: 70%;
+        height: 50vh;
+    }
+}
+
+/*--/map-active--*/
+.item {
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    padding-top: 75px;
+    background: rgba(255, 85, 0, .7);
+    text-align: center;
+    color: #4E4C48;
+    font-size: 1.5em;
+}
+
+/*--product--*/
+.product {
+    background: url("../pic/back5.html") center center no-repeat;
+    background-size: cover;
+    padding-top: 30px;
+    font-family: IRANSans;
+    height: 80vh;
+}
+
+.product-1 {
+    direction: rtl;
+}
+
+.btn-darkgreen {
+    background-color: #446935 !important;
+    border-color: #7dba45 !important;
+}
+
+.btn-lightgreen {
+    background-color: #7dba45 !important;
+    border-color: #446935 !important;
+}
+
+/*--/product--*/
+
+/*--Food-integrity--*/
+.Food-integrity {
+    background-size: cover;
+    font-family: IRANSans;
+}
+
+.Food-integrity .fi-1 {
+    direction: rtl;
+}
+
+.Food-integrity img {
+    width: 100%;
+    height: 50vh;
+    box-shadow: -5px -5px 30px 5px #446935, 5px 5px 30px 5px #7dba45;
+    background-size: 10px 100%;
+    background-position: 0 0, 100% 0;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 560px) and (max-width: 768px) {
+    .Food-integrity img {
+        width: 70%;
+        height: 50vh;
+    }
+}
+
+/*--Originality--*/
+.Originality {
+    font-family: IRANSans;
+}
+
+.Originality-index {
+    font-family: IRANSans;
+    background-size: cover;
+}
+
+.Originality .or-3 {
+    text-align: right;
+    direction: rtl;
+}
+
+.Originality .or-1, .Originality-index .or-1 {
+    direction: rtl;
+}
+
+.Originality table, .Originality-index table {
+    text-align: center;
+}
+
+.bg-gray {
+    background-color: rgba(128, 128, 128, 0.62);
+}
+
+.bg-darkgreen {
+    background-color: #446935 !important;
+}
+
+.Originality .or-1 {
+    direction: ltr;
+}
+
+.Originality img, .Originality-index img {
+    width: 100%;
+    height: 50vh;
+    box-shadow: -5px -5px 30px 5px #446935, 5px 5px 30px 5px #7dba45;
+    background-size: 10px 100%;
+    background-position: 0 0, 100% 0;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 560px) and (max-width: 768px) {
+    .Originality img {
+        width: 70%;
+        height: 50vh;
+    }
+}
+
+.Originality-index a {
+    font-family: IRANSans;
+    margin: 0 auto;
+    text-align: center !important;
+    display: block;
+    width: 40%;
+}
+
+/*--/Originality--*/
+
+/*--finger--*/
+.finger {
+    font-family: IRANSans;
+    background-size: cover;
+}
+
+.finger .fin-1 {
+    direction: rtl;
+}
+
+.finger img {
+    width: 100%;
+    height: 50vh;
+    box-shadow: -5px -5px 30px 5px #446935, 5px 5px 30px 5px #7dba45;
+    background-size: 10px 100%;
+    background-position: 0 0, 100% 0;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+@media (min-width: 560px) and (max-width: 768px) {
+    .finger img {
+        width: 70%;
+        height: 50vh;
+    }
+}
+
+/*--/finger--*/
+
+/*--gradient--*/
+.gradient {
+    font-family: IRANSans;
+    background: url("../pic/Halftone%20circle%20background%20vector.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.gradient .gr-1 {
+    direction: rtl;
+}
+
+.gradient img {
+    margin: 0 auto;
+    box-shadow: -5px -5px 30px 5px #446935, 5px 5px 30px 5px #7dba45;
+    border-radius: 30px 30px 30px 30px;
+}
+
+/*--/gradient--*/
+
+/*--mind--*/
+.mind {
+    font-family: IRANSans;
+    background: url("../pic/Halftone%20circle%20background%20vector.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.mind .mi-1 {
+    direction: rtl;
+}
+
+/*--/mind--*/
+
+/*--kemo--*/
+.kemo {
+    font-family: IRANSans;
+    background: url("../pic/Halftone%20circle%20background%20vector.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.kemo .kemo-1 {
+    direction: rtl;
+}
+
+.kemo .kemo-2 img {
+    margin: 0 auto;
+    box-shadow: -5px -5px 30px 5px #446935, 5px 5px 30px 5px #7dba45;
+}
+
+/*--/kemo--*/
+
+/*--/Devices--*/
+.devices {
+    font-family: IRANSans;
+    background: url("../pic/Halftone%20circle%20background%20vector.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.devices .dev-1 {
+    direction: rtl;
+}
+
+.devices .dev-2 img {
+    width: 100%;
+    height: 50vh;
+    box-shadow: -5px -5px 30px 5px #446935, 5px 5px 30px 5px #7dba45;
+    background-size: 10px 100%;
+    background-position: 0 0, 100% 0;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.devices .dev-3 img {
+    box-shadow: -5px -5px 30px 5px #446935, 5px 5px 30px 5px #7dba45;
+
+    padding: 20px;
+}
+
+
+/*--/Devices--*/
+
+/*--saffron--*/
+.saffron {
+    font-family: IRANSans;
+}
+.saffron .h5{
+    color: #0237db;
+}
+.saffron i{
+    color: #7dba45;
+    font-weight: bolder;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+.saffron .s-1 {
+    background: url("../pic/Halftone%20circle%20background%20vector.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.saffron .saffron-1 {
+    direction: rtl;
+}
+
+.saffron .saffron-2 img {
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: -5px -5px 30px 5px #446935, 5px 5px 30px 5px #7dba45;
+    padding: 10px;
+
+}
+
+.saffron .saffron-3 img {
+    width: 100%;
+    height: 30vh;
+    margin: 0 auto;
+    box-shadow: -5px -5px 30px 5px #446935, 5px 5px 30px 5px #7dba45;
+    padding: 10px;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .saffron .saffron-2 img {
+        width: 50%;
+    }
+}
+
+@media (min-width: 560px) and (max-width: 768px) {
+    .saffron .saffron-2 img {
+        width: 60%;
+    }
+}
+
+@media (max-width: 560px) {
+    .saffron .saffron-2 img {
+        width: 60%;
+    }
+}
+
+.saffron .saffron-4 img {
+    width: 100%;
+    margin: 0 auto;
+    border: 5px inset #7dba45;
+    border-radius: 30px 30px 30px 30px;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .saffron .saffron-4 img {
+        width: 50%;
+    }
+}
+
+@media (min-width: 560px) and (max-width: 768px) {
+    .saffron .saffron-4 img {
+        width: 60%;
+    }
+}
+
+@media (max-width: 560px) {
+    .saffron .saffron-4 img {
+        width: 60%;
+    }
+}
+
+/*--/saffron--*/
+
+/*--turmeric--*/
+.turmeric {
+    font-family: IRANSans;
+}
+.turmeric .h5{
+    color: #0237db;
+}
+.turmeric i{
+    color: #7dba45;
+    font-weight: bolder;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+.turmeric .tur-1 {
+    background: url("../pic/Halftone%20circle%20background%20vector.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.turmeric .turmeric-1 {
+    direction: rtl;
+}
+
+.turmeric .turmeric-2 img {
+    width: 70%;
+    margin: 0 auto;
+    box-shadow: -5px -5px 30px 5px #446935, 5px 5px 30px 5px #7dba45;
+    border-radius: 30px 30px 30px 30px;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .turmeric .turmeric-2 img {
+        width: 40%;
+    }
+}
+
+@media (min-width: 560px) and (max-width: 768px) {
+    .turmeric .turmeric-2 img {
+        width: 60%;
+    }
+}
+
+@media (max-width: 560px) {
+    .turmeric .turmeric-2 img {
+        width: 50%;
+    }
+}
+
+.turmeric .turmeric-3 img {
+    width: 100%;
+    height: 30vh;
+    padding: 5px;
+    margin: 0 auto;
+    box-shadow: -5px -5px 30px 5px #446935, 5px 5px 30px 5px #7dba45;
+    border-radius: 30px 30px 30px 30px;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .turmeric .turmeric-3 img {
+        width: 40%;
+    }
+}
+
+@media (min-width: 560px) and (max-width: 768px) {
+    .turmeric .turmeric-3 img {
+        width: 60%;
+    }
+}
+
+@media (max-width: 560px) {
+    .turmeric .turmeric-3 img {
+        width: 50%;
+    }
+}
+
+/*--/turmeric--*/
+
+/*--milk--*/
+.milk {
+    font-family: IRANSans;
+    background: url("../pic/Halftone%20circle%20background%20vector.jpg") center center no-repeat;
+    background-size: cover;
+}
+.milk .h5{
+    color: #0237db;
+}
+.milk i{
+    color: #7dba45;
+    font-weight: bolder;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+.milk .milk-1 {
+    direction: rtl;
+}
+
+.milk .milk-2 img {
+    box-shadow: -5px -5px 30px 5px #446935, 5px 5px 30px 5px #7dba45;
+    border-radius: 30px 30px 30px 30px;
+    width: 60%;
+    height: 30vh;
+}
+
+/*--/milk--*/
+
+/*--meat--*/
+.meat {
+    background: url("../pic/Halftone%20circle%20background%20vector.jpg") center center no-repeat;
+    background-size: cover;
+    font-family: IRANSans;
+}
+.meat .h5{
+    color: #0237db;
+}
+.meat i{
+    color: #7dba45;
+    font-weight: bolder;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+.meat .meat-1 {
+    direction: rtl;
+}
+
+.meat .meat-2 img {
+    box-shadow: -5px -5px 30px 5px #446935, 5px 5px 30px 5px #7dba45;
+    border-radius: 30px 30px 30px 30px;
+    width: 60%;
+    height: 30vh;
+}
+
+/*--/meat--*/
+
+/*--article--*/
+.article {
+    font-family: IRANSans;
+    background: url("../pic/Halftone%20circle%20background%20vector.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.article-index {
+    font-family: IRANSans;
+}
+
+
+.article .article-1, .article-index .article-1 {
+    direction: rtl;
+}
+
+.article .article-2 img {
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: -5px -5px 30px 5px #446935, 5px 5px 30px 5px #7dba45;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.article-index a {
+    font-family: IRANSans;
+    margin: 0 auto;
+    text-align: center !important;
+    display: block;
+    width: 40%;
+}
+
+/*--/article--*/
+
+/*--connection--*/
+.connection {
+    background: url("../pic/Halftone%20circle%20background%20vector.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.connection, .connection-index {
+    font-family: IRANSans;
+}
+
+.connection .connection-1, .connection-index .connection-1 {
+    direction: rtl;
+}
+
+.connection .connection-2 img {
+    width: 80%;
+    height: 40vh;
+    margin: 0 auto;
+    box-shadow: -5px -5px 30px 5px #446935, 5px 5px 30px 5px #7dba45;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.connection .connection-3 img {
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: -5px -5px 30px 5px #446935, 5px 5px 30px 5px #7dba45;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.connection-index a {
+    font-family: IRANSans;
+    margin: 0 auto;
+    text-align: center !important;
+    display: block;
+    width: 40%;
+}
+
+/*--/connection--*/
+
+/*--event--*/
+.event {
+    font-family: IRANSans;
+}
+
+.event-index {
+    font-family: IRANSans;
+    background-color: rgba(125, 186, 69, 0.29);
+}
+
+.event .even-1 {
+    background: url("../pic/Halftone%20circle%20background%20vector.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.event .event-1, .event-index .event-1 {
+    direction: rtl;
+}
+
+.event .event-2 img {
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: -5px -5px 30px 5px #446935, 5px 5px 30px 5px #7dba45;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.event-index a {
+    font-family: IRANSans;
+    margin: 0 auto;
+    text-align: center !important;
+    display: block;
+    width: 40%;
+}
+
+/*--/event--*/
+
+/*--footer--*/
+footer {
+    background: linear-gradient(to bottom, rgb(51, 196, 271) 0%, #33c4f1 100%);
+    direction: rtl;
+}
+
+footer iframe {
+    margin-bottom: 10px
+}
+
+footer .copy {
+    font-family: IRANSans;
+    font-size: 13px;
+    direction: rtl;
+    background-color: rgba(0, 0, 0, 0.2)
+}
+
+footer .copy a:hover {
+    text-decoration: none;
+}
+
+footer .copy {
+    color: gold;
+}
+
+footer .menu li {
+    font-family: IRANSans;
+    list-style: none;
+}
+
+footer .menu span {
+    font-family: IRANSans;
+    color: white;
+    display: block;
+
+}
+
+footer .menu li a {
+    font-family: IRANSans;
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    transition: all 0.5s linear;
+}
+
+footer .menu li a:hover {
+    color: whitesmoke;
+}
+
+footer .menu li i {
+    color: whitesmoke;
+    transition: all 0.5s linear;
+}
+
+footer .menu li i:hover {
+    color: whitesmoke;
+}
+
+footer .menu hr {
+    width: 30%;
+    border: 1px solid darkgreen;
+    text-align: center;
+    display: inline-block;
+}
+
+footer .menu span {
+    margin-top: 20px;
+}
+
+/*--/footer--*/
+
+/*--contact--*/
+
+#contatti {
+    background: url("../pic/Halftone%20circle%20background%20vector.jpg") center center no-repeat;
+    background-size: cover;
+    direction: rtl;
+    height: 70vh;
+    font-family: IRANSans;
+}
+
+#contatti img {
+    width: 250px;
+    height: 300px;
+    margin: 0 auto !important;
+    box-shadow: -5px -5px 30px 5px #446935, 5px 5px 30px 5px #7dba45;
+}
+
+#contatti a {
+    color: black;
+    text-decoration: none;
+}
+
+
+@media (max-width: 575.98px) {
+
+
+    #contatti .maps iframe {
+        width: 100%;
+        height: 450px;
+    }
+}
+
+
+@media (min-width: 576px) {
+
+    #contatti .maps iframe {
+        width: 100%;
+        height: 450px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    #contatti .maps iframe {
+        width: 100%;
+        height: 850px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    #contatti .maps iframe {
+        width: 100%;
+        height: 450px;
+    }
+}
+
+
+#author a {
+    color: black;
+    text-decoration: none;
+
+}
+
+/*--/contact--*/
+
+/*--plt--*/
+.plt{
+    background: url("../pic/Halftone%20circle%20background%20vector.jpg") center center no-repeat;
+    background-size: cover;
+    font-family: IRANSans;
+}
+.plt h4,p{
+    direction: rtl;
+    margin-top: 20px;
+
+}
+.plt h5{
+    text-align: center;
+}
+.plt .img{
+    margin: 0 auto;
+    width: 350px;
+    display: block;
+}
+/*--/plt--*/
+
+/*--news-office--*/
+.news-off{
+    background: url("../pic/Halftone%20circle%20background%20vector.jpg") center center no-repeat;
+    background-size: cover;
+    font-family: IRANSans;
+}
+.news-off marquee{
+    background-color:#7dba45 ;
+    margin-top: 30px;
+    font-family: IRANSans;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 20px 5px 20px 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.37);
+    direction: rtl;
+}
+.news-off p,h4{
+    direction: rtl;
+}
+.news-off img{
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.37);
+}
+.news-off .img-1{
+    width: 50%;
+}
+.news-off .n-one{
+    border: 5px double #7dba45;
+    padding: 10px;
+}
+.news-off .n-two{
+    border: 5px double #7dba45;
+    padding: 10px;
+    margin-top: 20px;
+}
+.news-off .img-2{
+    width: 30%;
+    margin-top: 20px;
+}
+
+#slideshow {
+    margin: 0 auto;
+    position: relative;
+    width: 500px;
+    height: 450px;
+    padding: 10px;
+}
+#slideshow .img-3{
+    width: 100%;
+    height: 50vh;
+    margin-top: 50px;
+}
+#slideshow > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+}
+
+/*--/news-office--*/
+
+
